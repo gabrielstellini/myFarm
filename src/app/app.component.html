@@ -4,13 +4,13 @@
         <div class="mdl-layout__header-row">
             <!-- Title -->
             <a routerLink="/">
-                <span class="mdl-layout-title">myFarm</span>
+                <span class="mdl-layout-title" i18n="@@MyFarm">My Farm</span>
             </a>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" [routerLink]="'/'">Dashboard</a>
+                <a class="mdl-navigation__link" [routerLink]="'/'" i18n="@@dashboard">Dashboard</a>
                 <a class="mdl-navigation__link" [routerLink]="'/profile'">Profile</a>
             </nav>
         </div>

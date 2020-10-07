@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID } from '@angular/core';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,6 @@ export class AppComponent {
     public loading = false;
 
     constructor(private router: Router) {
-
         this.router.events.subscribe(event => {
             switch (true) {
                 case event instanceof NavigationStart: {
